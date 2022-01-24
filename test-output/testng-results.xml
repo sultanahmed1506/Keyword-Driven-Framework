@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6769" started-at="2022-01-19T01:30:42Z" finished-at="2022-01-19T01:30:49Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6769" started-at="2022-01-19T01:30:42Z" finished-at="2022-01-19T01:30:49Z">
+      <class name="keyworddrivenfwk.tests.TestScript">
+        <test-method status="PASS" signature="invokeBrowser(java.lang.String)[pri:0, instance:keyworddrivenfwk.tests.TestScript@685cb137]" name="invokeBrowser" is-config="true" duration-ms="1962" started-at="2022-01-19T01:30:42Z" finished-at="2022-01-19T01:30:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="validateLogin()[pri:0, instance:keyworddrivenfwk.tests.TestScript@685cb137]" name="validateLogin" duration-ms="4167" started-at="2022-01-19T01:30:44Z" finished-at="2022-01-19T01:30:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:keyworddrivenfwk.tests.TestScript@685cb137]" name="closeBrowser" is-config="true" duration-ms="623" started-at="2022-01-19T01:30:48Z" finished-at="2022-01-19T01:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- keyworddrivenfwk.tests.TestScript -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
