@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keyworddrivenfwk.tests.TestScript" hash-for-method="validateLogin">validateLogin</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keyworddrivenfwk.tests.TestScript" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateLogin">
-                  </a> <!-- validateLogin -->
-                  <span class="method-name">validateLogin</span>
+                  <a name="invalidLoginTest">
+                  </a> <!-- invalidLoginTest -->
+                  <span class="method-name">invalidLoginTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,6 +142,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;keyworddrivenfwk.utils.TestListeners&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browserType&quot; value=&quot;CH&quot;/&gt;
     &lt;classes&gt;
@@ -187,9 +190,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateLogin')
+data.setCell(0, 1, 'invalidLoginTest')
 data.setCell(0, 2, 'keyworddrivenfwk.tests.TestScript')
-data.setCell(0, 3, 4167);
+data.setCell(0, 3, 4497);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -226,12 +229,12 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">validateLogin</span>
-                <span class="method-start">1967 ms</span>
+                <span class="method-name">invalidLoginTest</span>
+                <span class="method-start">1928 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">6135 ms</span>
+                <span class="method-start">6431 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

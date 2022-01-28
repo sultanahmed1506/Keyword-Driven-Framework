@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="keyworddrivenfwk.utils.TestListeners"/>
+  </listeners>
   <test thread-count="5" verbose="5" name="Test(failed)">
     <parameter name="browserType" value="CH"/>
     <classes>
-      <class name="keyworddrivenfwk.tests.DriverScript">
+      <class name="keyworddrivenfwk.tests.TestScript">
         <methods>
-          <include name="validateLogin"/>
-          <include name="invokeBrowser"/>
           <include name="closeBrowser"/>
+          <include name="invalidLoginTest"/>
+          <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- keyworddrivenfwk.tests.DriverScript -->
+      </class> <!-- keyworddrivenfwk.tests.TestScript -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

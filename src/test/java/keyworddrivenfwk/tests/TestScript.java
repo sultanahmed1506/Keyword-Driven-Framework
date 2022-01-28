@@ -5,11 +5,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import keyworddrivenfwk.utils.ActionClass;
+import keyworddrivenfwk.utils.TestBase;
 public class TestScript extends TestBase  {
 	
 	
 	@Test
-	public void validateLogin() throws Exception
+	public void invalidLoginTest() throws Exception
 	{
 		/*
 		 * param1 : driver
@@ -18,8 +19,17 @@ public class TestScript extends TestBase  {
 		 */
 		ActionClass actionClass = new ActionClass();
 		boolean result = actionClass.run(driver,"inputData.xlsx","E2E_001");
-		Assert.assertTrue(result);
-
+		
+		//System.out.println("Results >>>" +result);
+		
+		String status =actionClass.readResultsStatusFromExcel(driver, "inputData.xlsx","E2E_001",5,6);
+		System.out.println("status : "+status);
+		if (status.equalsIgnoreCase("pass")) {
+			Assert.assertTrue(true);
+		}
+		else {
+			Assert.assertTrue(false);
+		}
 	}
 	
 	
